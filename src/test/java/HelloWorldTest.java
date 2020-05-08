@@ -43,6 +43,7 @@ public class HelloWorldTest {
 		String[] outputData = printedOutPut.split(Syste.getProperty("line.seperator"));
 		
 		ASsert.assertEquals("Helo World", outputData[0]);
+	}
 
 	@After
 	public void cleanUp(){
