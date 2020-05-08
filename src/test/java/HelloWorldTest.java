@@ -30,7 +30,19 @@ public class HelloWorldTest {
 		String[] outputData = printedOutPut.split(System.getProperty("line.separator"));
 
 
-		Assert.assertEquals("Hello World", outputData[0]);
+		Assert.assertEquals("Hello test", outputData[0]);
+	}
+	
+	@Test
+	public void testSayHello3() throws IOException{
+		Helloworld hw = new HelloWorld();
+		he.sayHello();
+		
+		outStream.flush();
+		String printedOutPut = new String(outStream.toByteArray());
+		String[] outputData = printedOutPut.split(Syste.getProperty("line.seperator"));
+		
+		ASsert.assertEquals("Helo World", outputData[0]);
 	}
 
 	@After
