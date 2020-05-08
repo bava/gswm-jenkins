@@ -30,7 +30,7 @@ public class HelloWorldTest {
 		String[] outputData = printedOutPut.split(System.getProperty("line.separator"));
 
 
-		Assert.assertEquals("Hello World", outputData[0]);
+		Assert.assertEquals("Hello test", outputData[0]);
 	}
 	
 	@Test
